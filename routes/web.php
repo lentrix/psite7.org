@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/invitation-generator', [InvitationGeneratorController::class, 'index']);
+Route::post('/invitation-generator',[InvitationGeneratorController::class, 'generate']);
